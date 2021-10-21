@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+   <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+    <title>Snek - By Kristoffer</title>
+
+    <link rel="stylesheet" href="../static/index.css">
+
+    <script src="../javascripts/renderer.js"></script>
+    <script src="../javascripts/game.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id="landingView">
+      <h1>Snek</h1>
+      <ul>
+        <li><a id="playBTN" onclick="startGame()">Spill</a></li>
+        <li onclick="Game.quit()" id="quitGame"><a>Stop</a></li>
+      </ul>
+    </div>
+  <div id="gameview" style="display: none">
+<!--    <div id="gameGrid"/>-->
+  </div>
+  </body>
+</html>
