@@ -85,7 +85,7 @@ function snakeTimer(quit = false) {
             // if (snek[i] === pos) {
             let newY = "y" + (parseInt(Game.snek[i].split('-')[1][1]) + parseInt(y));
             let newX = "x" + (parseInt(Game.snek[i].split('-')[0][1]) + parseInt(x));
-            if (parseInt(Game.snek[i].split('-')[1][1]) > 9 || parseInt(Game.snek[i].split('-')[1][1]) < 1 || parseInt(Game.snek[i].split('-')[0][1]) + parseInt(x) > 9 || parseInt(Game.snek[i].split('-')[0][1]) + parseInt(x) < 0) {
+            if (parseInt(Game.snek[i].split('-')[1][1]) > 8 || parseInt(Game.snek[i].split('-')[1][1]) < 1 || parseInt(Game.snek[i].split('-')[0][1]) + parseInt(x) > 9 || parseInt(Game.snek[i].split('-')[0][1]) + parseInt(x) < 0) {
                 Game.land();
             }
                 // window.close();
